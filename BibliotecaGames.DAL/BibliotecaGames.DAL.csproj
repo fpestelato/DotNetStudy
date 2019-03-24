@@ -43,5 +43,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibliotecaGames.Entities\BibliotecaGames.Entities.csproj">
+      <Project>{1cb41abc-3257-44f9-874a-6af1254315d1}</Project>
+      <Name>BibliotecaGames.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

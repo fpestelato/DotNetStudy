@@ -43,5 +43,15 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibliotecaGames.DAL\BibliotecaGames.DAL.csproj">
+      <Project>{25223852-4e2c-40e3-8ea9-bebb69de95a5}</Project>
+      <Name>BibliotecaGames.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BibliotecaGames.Entities\BibliotecaGames.Entities.csproj">
+      <Project>{1cb41abc-3257-44f9-874a-6af1254315d1}</Project>
+      <Name>BibliotecaGames.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

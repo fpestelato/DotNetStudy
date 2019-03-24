@@ -88,6 +88,16 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibliotecaGames.BLL\BibliotecaGames.BLL.csproj">
+      <Project>{8abf9931-c445-493f-b229-86edf92036fa}</Project>
+      <Name>BibliotecaGames.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BibliotecaGames.Entities\BibliotecaGames.Entities.csproj">
+      <Project>{1cb41abc-3257-44f9-874a-6af1254315d1}</Project>
+      <Name>BibliotecaGames.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
