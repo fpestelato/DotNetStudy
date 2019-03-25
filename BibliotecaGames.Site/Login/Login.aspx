@@ -20,6 +20,7 @@
                 <br />
                 <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
                 <br />
+                <asp:Label ID="lblStatus" runat="server"></asp:Label>
                 <asp:Button ID="btnLogin" text="Entrar" runat="server" OnClick="btnLogin_Click" />
             </div>
         </div>

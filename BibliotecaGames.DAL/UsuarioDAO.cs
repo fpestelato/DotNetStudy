@@ -31,7 +31,7 @@ namespace BibliotecaGames.DAL
                     usuario = new Usuario();
 
                     usuario.Id = Convert.ToInt32(reader["CodUsuario"]);
-                    usuario.NomeUsuario = reader["NomeUsario"].ToString();
+                    usuario.NomeUsuario = reader["NomeUsuario"].ToString();
                     usuario.Senha = reader["SenhaUsuario"].ToString();
                     usuario.Perfil = Convert.ToChar(reader["PerfilUsuario"]);
                 }
@@ -45,7 +45,7 @@ namespace BibliotecaGames.DAL
             }
             finally
             {
-                Conexao.Desconectar()
+                Conexao.Desconectar();
             };
         }
     }
