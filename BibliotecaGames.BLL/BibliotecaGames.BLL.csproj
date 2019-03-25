@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BibliotecaGames.BLL</RootNamespace>
     <AssemblyName>BibliotecaGames.BLL</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,10 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autenticacao\LoginBo.cs" />
+    <Compile Include="Excecoes\UsuarioNaoCadastradoException.cs" />
     <Compile Include="Modelo\Genero.cs" />
     <Compile Include="Modelo\Desenvolvedor.cs" />
     <Compile Include="Modelo\Jogo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BibliotecaGames.DAL\BibliotecaGames.DAL.csproj">
+      <Project>{25223852-4e2c-40e3-8ea9-bebb69de95a5}</Project>
+      <Name>BibliotecaGames.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BibliotecaGames.Entities\BibliotecaGames.Entities.csproj">
+      <Project>{1cb41abc-3257-44f9-874a-6af1254315d1}</Project>
+      <Name>BibliotecaGames.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
