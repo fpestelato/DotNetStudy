@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="Autenticacao\LoginBo.cs" />
     <Compile Include="Excecoes\UsuarioNaoCadastradoException.cs" />
+    <Compile Include="Modelo\Genero.cs" />
+    <Compile Include="Modelo\Desenvolvedor.cs" />
+    <Compile Include="Modelo\Jogo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
